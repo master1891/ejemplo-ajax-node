@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+</head>
+<body>
+    <div id="main-container">
+        <h1>Registro de Peliculas</h1>
+        <form action="/new" method="POST">
+
+            <p>
+                <label for="">Nombre de la pelicula</label></br>
+                <input type="text" name="nombre" id="nombre"></input>
+            </p>
+            <p>
+                <label for="">Calificacion</label></br>
+                <input type="range" max="10" min="1" name="rating" id="rating"></input>
+            </p>
+            <input type="button" id="enviar" value="Registrar nueva pelicula">
+        </form>
+    
+        <!--contenedor de peliculas-->
+        <div id="container-peliculas">
+
+        </div>
+
+
+    </div>
+
+    <script src="js/agregar.js">
+   
+    </script>
+
+    
+</body>
+
+</html>
